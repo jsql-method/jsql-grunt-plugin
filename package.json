@@ -1,0 +1,46 @@
+{
+  "name": "grunt-jsql",
+  "description": "Grunt plugin for JSQL",
+  "version": "0.3.1",
+  "homepage": "https://softwarecartoon.com",
+  "author": {
+    "name": "JSQL",
+    "email": "office@jsql.it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://jsql.it"
+  },
+  "bugs": {
+    "url": "https://jsql.it"
+  },
+  "licenses": [
+    {
+      "type": "ISC",
+      "url": "https://jsql.it"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {},
+  "dependencies": {    
+    "npm-jsql": "latest",
+    "grunt-exec": "^3.0.0"
+  },
+  "peerDependencies":{
+	"grunt": "^1.0.3"
+  },
+  "devDependencies":{
+	"grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^0.3.3"
+  },
+  "keywords": [
+    "gruntplugin",
+    "jsql-javascript",
+    "jsql",
+    "jsql-it",
+    "jsql-optimization"
+  ]
+}
