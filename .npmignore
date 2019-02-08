@@ -1,0 +1,11 @@
+node_modules/
+.idea/
+test/
+.gitignore
+deploy_npm.bat
+.npmignore
+package-lock.json
+prepare.bat
+Gruntfile.js
+jsql
+jsql-grunt-plugin.iml
