@@ -11,3 +11,5 @@ package-lock.json
 prepare.bat
 test-key.key
 package-lock.json
+*.tgz
+install-local.bat
