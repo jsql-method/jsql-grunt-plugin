@@ -1,18 +1,26 @@
 /*
- * Copyright (c) 2018 JSQL Sp.z.o.o. (Ltd, LLC) www.jsql.it
- * Licensed under the ISC license
+ * Copyright (c) 2017-2019 JSQL Sp. z.o.o. (Ltd, LLC) www.jsql.it
+ * See LICENSE or https://jsql.it/public-packages-license
  */
 
 'use strict';
 
 module.exports = function (grunt) {
-	grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('grunt-exec');
 
-    grunt.registerMultiTask('jsql', 'Grunt plugin to run JSQL CLI', function () {
+    grunt.registerMultiTask('jsql', 'Grunt plugin to for JSQL CLI', function () {
 
         let options = this.options({});
-		grunt.config('exec.jsql', 'node ' + require.resolve('jsql-cli') + ' --apikey=' + options.apiKey + ' --input=' + options.src + ' --output=' + options.dist);
-		grunt.task.run(['exec:jsql']);
+        let command = 'node ' + require.resolve('jsql-cli') +
+            ' --apiKey=' + options.apiKey +
+            ' --input=' + options.src +
+            ' --output=' + options.dist +
+            ' --env=' + (options.local ? 'local' : 'prod') +
+            (options.devKeyFileName ? ' --devKeyFileName=' + options.devKeyFileName : '') +
+            (options.debug ? ' --debug ' : '');
+
+        grunt.config('exec.jsql', command);
+        grunt.task.run(['exec:jsql']);
 
     });
 
