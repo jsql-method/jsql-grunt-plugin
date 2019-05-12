@@ -3,6 +3,7 @@
  * See LICENSE or https://jsql.it/public-packages-license
  */
 
+
 'use strict';
 
 module.exports = function (grunt) {
