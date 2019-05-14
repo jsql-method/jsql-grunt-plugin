@@ -3,7 +3,7 @@ node_modules/
 test/
 .gitignore
 .jshintrc
-deploy_npm.bat
+*.bat
 .npmignore
 Gruntfile.js
 jsql-grunt-plugin.iml
@@ -13,3 +13,4 @@ test-key.key
 package-lock.json
 *.tgz
 install-local.bat
+.npmrc
