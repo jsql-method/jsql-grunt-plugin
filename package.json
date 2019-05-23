@@ -1,7 +1,7 @@
 {
   "name": "grunt-jsql",
   "description": "JSQL CLI plugin for Grunt tasks runner. Visit www.jsql.it",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "homepage": "https://jsql.it",
   "author": {
     "name": "JSQL Sp.z.o.o. (Ltd, LLC)",
