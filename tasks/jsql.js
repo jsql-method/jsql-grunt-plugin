@@ -20,10 +20,6 @@ module.exports = function (grunt) {
             (options.devKeyFileName ? ' --devKeyFileName=' + options.devKeyFileName : '') +
             (options.debug ? ' --debug ' : '');
 
-        if(options.development){
-            command += ' --development';
-        }
-
         grunt.config('exec.jsql', command);
         grunt.task.run(['exec:jsql']);
 

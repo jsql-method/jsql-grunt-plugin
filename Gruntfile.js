@@ -17,8 +17,7 @@ module.exports = function (grunt) {
                     dist: 'test/dist/test.min.js',
                     devKeyFileName: 'test-key.key',
                     debug: true,
-                    env: 'local',
-                    development: true
+                    env: 'local'
                 }
             }
         }
